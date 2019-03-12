@@ -111,7 +111,20 @@ button {
         font-size: 9px;
         background-color: #d1a220;
         border-radius: 6px; 
-        padding: 6px 10px; 
+        padding: 4px 6px; 
+    }
+    
+    .box{ 
+        display: flex;
+        font-size: 12px;
+        color: rgb(219, 210, 180);
+        font-weight: bold;
+        justify-content: center;
+    }
+    
+    .box > div {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
 
@@ -136,9 +149,22 @@ button {
     }
     
     button {
-        font-size: 14px;
+        font-size: 16px;
         background-color: #d1a220;
         border-radius: 8px; 
-        padding: 10px 24px; 
+        padding: 12px 18px; 
     } 
+
+    .box{ 
+        display: flex;
+        font-size: 30px;
+        color: rgb(219, 210, 180);
+        font-weight: bold;
+        justify-content: center;
+    }
+    
+    .box > div {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }

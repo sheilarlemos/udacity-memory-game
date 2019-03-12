@@ -6,6 +6,7 @@ let seconds = 0;
 let timer = null;
 let counter = 0;
 let counterFails = 0;
+let rating = null;
 const counterElement = document.getElementById('counter');
 const ratingElement = document.getElementById('rating');
 
@@ -35,8 +36,10 @@ function startGame() {
     timerElement.textContent = formatTime(seconds);
 
     counter = 0;
+    counterFails = 0;
     counterElement.textContent = counter;
 
+    rating = 3;
     updateRating();
     
     clearInterval(timer);
@@ -116,7 +119,7 @@ function resetCard(currentClickedElement) {
 //When you win the game, an alert box pops out
 function win() {
     setTimeout(function () {
-        const message = `Congrats you won!\nYour final rating is X and your time was ${formatTime(seconds)}.\nClick OK if you want to play again.`;
+        const message = `Congrats you won!\nYour final rating is ${rating} and your time was ${formatTime(seconds)}.\nClick OK if you want to play again.`;
         if(confirm(message)) {
             reset();
         }
@@ -128,7 +131,6 @@ function reset() {
 }
 
 function updateRating() {
-    let rating = 3;
     if (counterFails > 4 && counterFails < 8) {
         rating = 2;
     } else if (counterFails >= 8 && counterFails < 10) {
