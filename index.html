@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="memory_game.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>My Memory Game</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="box">
+            <div><i class="far fa-clock"></i><span id="timer"></span></div>
+            <div>Moves: <span id="counter"></span></div>
+            <div id="rating"></div>
+            <button onclick="reset();"><i class="fas fa-sync-alt"></i> Restart</button>
+        </div>
+        <h1>Alice in the Memorylane</h1>
+    </header>
+    
+    <div class="container">
+    </div>
+
+    <script src="util.js"></script>
+    <script src="memory_game.js"></script>
+
+</body>
+
+</html>

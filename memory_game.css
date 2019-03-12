@@ -1,0 +1,144 @@
+
+body{
+    background-image: url(images/bg.jpg);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    color:  rgb(248, 224, 143);
+    text-align: center;
+}
+
+button {
+    font-size: 12px;
+    background-color: #d1a220;
+    border-radius: 8px; 
+    padding: 10px 20px;  
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box{ 
+    display: flex;
+    font-size: 45px;
+    color: rgb(219, 210, 180);
+    font-weight: bold;
+    justify-content: center;
+}
+
+.box > div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.card {
+    width: 190px;
+    height: 225px;
+    margin: 9px;
+}
+
+.face-1 {
+    background-image: url(images/card0.png);
+    background-size: auto;
+}
+.face-2 {
+    background-image: url(images/card1.png);
+    background-size: auto;
+}
+.face-3 {
+    background-image: url(images/card2.png);
+    background-size: auto;
+}
+.face-4 {
+    background-image: url(images/card3.png);
+    background-size: auto;
+}
+.face-5 {
+    background-image: url(images/card4.png);
+    background-size: auto;
+}
+.face-6 {
+    background-image: url(images/card5.png);
+    background-size: auto;
+}
+.back {
+    background-image: url(images/card_front.jpg);
+    background-size: auto;
+}
+
+.back:hover {
+    box-shadow: 0 0 10px rgb(24, 8, 94);
+}
+
+.match {
+    box-shadow: 0 0 20px rgb(0, 255, 255);
+}
+
+.fail {
+    box-shadow: 0 0 20px  rgb(235, 4, 4);
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .container {
+        max-width: 294px;
+        margin-top: 8px;
+    }
+     
+    .card {
+        width: 90px;
+        height: 106px;
+        margin: 4px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    .face-1, .face-2, .face-3, .face-4, .face-5, .face-6, .back {
+        background-size: 90px 106px;
+    }
+
+    button {
+        font-size: 9px;
+        background-color: #d1a220;
+        border-radius: 6px; 
+        padding: 6px 10px; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1295px) {
+    .container {
+      max-width: 628px;
+      margin-top: 15px;
+    }
+
+    .card {
+        width: 143px;
+        height: 169px;
+        margin: 7px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .face-1, .face-2, .face-3, .face-4, .face-5, .face-6, .back {
+        background-size: 143px 169px;
+    }
+    
+    button {
+        font-size: 14px;
+        background-color: #d1a220;
+        border-radius: 8px; 
+        padding: 10px 24px; 
+    } 
+}
